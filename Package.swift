@@ -28,8 +28,8 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "UserMessagingPlatform",
-      // TODO(neycwang): Replace with the actual public URL.
-      url: "https://gad-repo.appspot.com/static/UserMessagingPlatformSdkIos-2.0.0-SPM.zip",
+      url:
+        "https://dl.google.com/googleadmobadssdk/f8b187e86baff20b/googleusermessagingplatformios-spm-2.0.0.zip",
       checksum: "f8b187e86baff20ba0d8a5fa260f6462fa88056ba876a962407f2bbbc3502f53"
     )
   ]
