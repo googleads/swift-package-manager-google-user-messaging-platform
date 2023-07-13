@@ -18,7 +18,7 @@ import PackageDescription
 
 let package = Package(
   name: "GoogleUserMessagingPlatform",
-  platforms: [.iOS(.v10)],
+  platforms: [.iOS(.v11)],
   products: [
     .library(
       name: "GoogleUserMessagingPlatform",
@@ -29,8 +29,8 @@ let package = Package(
     .binaryTarget(
       name: "UserMessagingPlatform",
       url:
-        "https://dl.google.com/googleadmobadssdk/2d67696a7be81922/googleusermessagingplatformios-spm-2.0.1.zip",
-      checksum: "2d67696a7be819228fa28baaa5789e60a283c7aacc015373a449fc985529702a"
+        "https://dl.google.com/googleadmobadssdk/92c3ef8a3efde7c1/googleusermessagingplatformios-spm-2.1.0.zip",
+      checksum: "92c3ef8a3efde7c147dfadcb699ff6940c3be14c3bc06b093139b44e37298113"
     )
   ]
 )
