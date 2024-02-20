@@ -18,19 +18,26 @@ import PackageDescription
 
 let package = Package(
   name: "GoogleUserMessagingPlatform",
-  platforms: [.iOS(.v11)],
+  platforms: [.iOS(.v12)],
   products: [
     .library(
       name: "GoogleUserMessagingPlatform",
-      targets: ["UserMessagingPlatform"]
+      targets: ["UserMessagingPlatformTarget"]
     )
   ],
   targets: [
+    .target(
+      name: "UserMessagingPlatformTarget",
+      dependencies: [
+        .target(name: "UserMessagingPlatform")
+      ],
+      path: "UserMessagingPlatformTarget"
+    ),
     .binaryTarget(
       name: "UserMessagingPlatform",
       url:
-        "https://dl.google.com/googleadmobadssdk/f0f50864216a2469/googleusermessagingplatformios-spm-2.1.0.zip",
-      checksum: "f0f50864216a24690725f246df0b289d2eb6cc699b9da476857a0c135aeced84"
-    )
+        "https://dl.google.com/googleadmobadssdk/e66f5330a14714bd/googleusermessagingplatformios-spm-2.2.0.zip",
+      checksum: "e66f5330a14714bde1e4e3ada835b69828cd3f46d4f8e3d23c9e45a9c804fa46"
+    ),
   ]
 )
