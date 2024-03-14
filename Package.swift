@@ -31,13 +31,16 @@ let package = Package(
       dependencies: [
         .target(name: "UserMessagingPlatform")
       ],
-      path: "UserMessagingPlatformTarget"
+      path: "UserMessagingPlatformTarget",
+      linkerSettings: [
+        .linkedFramework("WebKit")
+      ]
     ),
     .binaryTarget(
       name: "UserMessagingPlatform",
       url:
-        "https://dl.google.com/googleadmobadssdk/e66f5330a14714bd/googleusermessagingplatformios-spm-2.2.0.zip",
-      checksum: "e66f5330a14714bde1e4e3ada835b69828cd3f46d4f8e3d23c9e45a9c804fa46"
+        "https://dl.google.com/googleadmobadssdk/d19528eef3b87919/googleusermessagingplatformios-spm-2.3.0.zip",
+      checksum: "d19528eef3b879194dbfc33e0fae7aaeac2e23dc419b82489c2caeea2d2a2e53"
     ),
   ]
 )
