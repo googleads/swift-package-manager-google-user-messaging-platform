@@ -39,8 +39,8 @@ let package = Package(
     .binaryTarget(
       name: "UserMessagingPlatform",
       url:
-        "https://dl.google.com/googleadmobadssdk/d19528eef3b87919/googleusermessagingplatformios-spm-2.3.0.zip",
-      checksum: "d19528eef3b879194dbfc33e0fae7aaeac2e23dc419b82489c2caeea2d2a2e53"
+        "https://dl.google.com/googleadmobadssdk/bd08292b4dd319fb/googleusermessagingplatformios-spm-2.4.0.zip",
+      checksum: "bd08292b4dd319fbdd21179e55637119314124f9750169466dd0fe056bf3f7a5"
     ),
   ]
 )
